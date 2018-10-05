@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="h-100">
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website title</title>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="libs/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/custom.min.css">
+  </head>
+  <body class="bg-light h-100">
+    <div class="site mx-auto d-flex flex-column h-100 w-100 position-relative">
+      <header class="site-header">
+        <div class="container position-relative">
+          <div class="header-btn header-top shadow" id="header-btn">Меню</div>
+          <div class="header-phone header-top shadow">+7 (123) 456-78-90</div>
+          <nav class="header-menu" id="header-menu">
+            <ul class="h-100 w-100 d-flex flex-column justify-content-center align-items-center">
+              <li class="text-center my-3"><a class="lead text-light text-uppercase" href="http://localhost:3000">Главная</a></li>
+              <li class="text-center my-3"><a class="lead text-light text-uppercase" href="about.html">О компании</a></li>
+              <li class="text-center my-3"><a class="lead text-light text-uppercase" href="objects.html">Наши объекты</a></li>
+              <li class="text-center my-3"><a class="lead text-light text-uppercase" href="news.html">Новости</a></li>
+              <li class="text-center my-3"><a class="lead text-light text-uppercase" href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="site-content flex-grow-1 flex-shrink-0 mt-5 mt-md-0">
+        <section class="page mt-3">
+          <div class="container">
+            <div class="page-header mb-4">
+              <h1 class="h2 page-title font-weight-normal text-center text-muted">Контакты</h1>
+              <div class="page-subtitle lead text-center text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, iure?</div>
+            </div>
+            <div class="page-content">
+              <div class="row">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card px-3 pt-3 mb-5 bg-light contacts-address">
+                    <address><strong>Organization name</strong><br>Ivanova str., 17<br>Moscow<br>Russian Federation, 123456<br><a href="mailto:example@example.com">example@example.com</a></address>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-8">
+                  <div class="contacts-map w-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7642059308!2d36.82512580492329!3d55.58074806111345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1534497550466" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-lg-4"><img class="contacts-img img-fluid" src="assets/images/contacts/office.jpg" alt="Office"></div>
+                <div class="col-lg-8">
+                  <div class="card shadow mt-3 mt-lg-0">
+                    <div class="card-header bg-secondary">
+                      <h2 class="card-title lead text-light m-0">Оставить заявку</h2>
+                    </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="form-group">
+                          <input class="form-control" type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" type="phone" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" type="text" placeholder="Должность">
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control">
+                            <option class="selected">Организация</option>
+                            <option>Государственное учреждение</option>
+                            <option>НКО</option>
+                            <option>Компания</option>
+                            <option>Другое</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" type="text" placeholder="Сайт" required>
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control" rows="5" placeholder="Дополнительная информация"></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                          <button class="btn btn-theme" type="submit">Отправить</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="site-footer footer flex-grow-0 flex-shrink-0 bg-dark mt-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-6">
+              <div class="social py-3"><a class="text-white mr-3" href="https://github.com/mikorn" target="_blank"><i class="fab fa-github h4"></i></a><a class="text-white mr-3" href="https://www.facebook.com/webmikorn/" target="_blank"><i class="fab fa-facebook-f h4"></i></a><a class="text-white mr-3" href="https://vk.com/webmikorn" target="_blank"><i class="fab fa-vk h4"></i></a><a class="text-white mr-3" href="https://twitter.com/Webmikorn" target="_blank"><i class="fab fa-twitter h4"></i></a><a class="text-white" href="https://www.youtube.com/c/WebmikornRus" target="_blank"><i class="fab fa-youtube h4"></i></a></div>
+            </div>
+            <div class="col-sm-6">
+              <div class="text-sm-right"><a class="text-light" href="https://webmikorn.ru" target="_blank">Разработка Микорн</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/wow/wow.min.js"></script>
+    <script src="libs/parallax.js/parallax.min.js"></script>
+    <script src="libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+  </body>
+</html>

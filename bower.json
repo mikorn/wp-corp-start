@@ -1,0 +1,26 @@
+{
+  "name": "mikorn-project",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "mikorn <info@webmikorn.ru>"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/assets/libs",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "font-awesome": "^5.0.10",
+    "bootstrap": "^4.1.2",
+    "wow": "^1.1.2",
+    "animate.css": "^3.7.0",
+    "parallax.js": "^1.5.0",
+    "page-scroll-to-id": "^1.5.8"
+  }
+}

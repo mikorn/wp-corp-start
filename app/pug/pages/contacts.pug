@@ -1,0 +1,66 @@
+extends ../layouts/default.pug
+
+block site-content
+    section.page.mt-3
+        .container
+            .page-header.mb-4
+                h1.h2.page-title.font-weight-normal.text-center.text-muted
+                    | Контакты
+                .page-subtitle.lead.text-center.text-secondary
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, iure?
+            .page-content
+                .row
+                    .col-md-6.col-lg-4
+                        .card.px-3.pt-3.mb-5.bg-light.contacts-address
+                            address
+                                strong
+                                    | Organization name
+                                br
+                                | Ivanova str., 17
+                                br
+                                | Moscow
+                                br
+                                | Russian Federation, 123456
+                                br
+                                a(href='mailto:example@example.com')
+                                    | example@example.com
+                    .col-md-6.col-lg-8
+                        .contacts-map.w-100
+                            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7642059308!2d36.82512580492329!3d55.58074806111345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1534497550466', width='100%', height='350', frameborder='0', style='border:0', allowfullscreen='')
+                .row.mt-5
+                    .col-lg-4
+                        img.contacts-img.img-fluid(src='assets/images/contacts/office.jpg', alt='Office')
+                    .col-lg-8
+                        .card.shadow.mt-3.mt-lg-0
+                            .card-header.bg-secondary
+                                h2.card-title.lead.text-light.m-0
+                                    | Оставить заявку
+                            .card-body
+                                form
+                                    .form-group
+                                        input.form-control(type='text', placeholder='Ваше имя', required)
+                                    .form-group
+                                        input.form-control(type='email', placeholder='Email', required)
+                                    .form-group
+                                        input.form-control(type='phone', placeholder='Телефон', required)
+                                    .form-group
+                                        input.form-control(type='text', placeholder='Должность')
+                                    .form-group
+                                        select.form-control
+                                            option.selected
+                                                | Организация
+                                            option
+                                                | Государственное учреждение
+                                            option
+                                                | НКО
+                                            option
+                                                | Компания
+                                            option
+                                                | Другое
+                                    .form-group
+                                        input.form-control(type='text', placeholder='Сайт', required)
+                                    .form-group
+                                        textarea.form-control(rows='5', placeholder='Дополнительная информация')
+                                    .form-group.text-center
+                                        button.btn.btn-theme(type='submit')
+                                            | Отправить

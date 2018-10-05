@@ -1,0 +1,14 @@
+extends ../layouts/default.pug
+
+block site-content
+    section.page.mt-3
+        .container
+            .page-header.mb-4
+                h1.h2.page-title.font-weight-normal.text-center.text-muted
+                    | О компании
+                .page-subtitle.lead.text-center.text-secondary
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, iure?
+            .page-content
+                include ../sections/personal
+                include ../sections/management
+                include ../sections/approach

@@ -1,0 +1,52 @@
+extends ../layouts/default.pug
+
+block site-content
+    section.page.mt-3
+        .container
+            .page-header.mb-4
+                h1.h2.page-title.font-weight-normal.text-center.text-muted
+                    | Lorem ipsum dolor sit amet
+            nav(aria-label='breadcrumb')
+                ol.breadcrumb.mt-4
+                    li.breadcrumb-item
+                        a(href='#')
+                            | Главная
+                    li.breadcrumb-item
+                        a(href='#')
+                            | Блог
+                    li.breadcrumb-item.active(aria-current='page')
+                        | Lorem ipsum dolor sit amet
+            .page-content
+                each val in [1, 2, 3, 4, 5]
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cumque fugit illum nemo voluptate. Delectus esse est hic modi nemo nesciunt nihil porro, repellat rerum sed sint sit sunt tempore tenetur unde velit voluptate. Adipisci alias autem beatae consequuntur cumque earum, expedita fugit iure porro possimus praesentium temporibus unde veniam.
+            .page-footer
+                .single-date.lead.font-italic
+                    | 28.09.2018
+                // ---- Rambler.Likes script start ----
+                .rambler-share.text-center
+                script.
+                    (function () {
+                        var init = function () {
+                            RamblerShare.init('.rambler-share', {
+                                "style": {
+                                    "buttonBackground": "#555"
+                                },
+                                "utm": "utm_medium=social",
+                                "counters": false,
+                                "buttons": [
+                                    "vkontakte",
+                                    "facebook",
+                                    "odnoklassniki",
+                                    "twitter",
+                                    "pinterest"
+                                ]
+                            });
+                        };
+                        var script = document.createElement('script');
+                        script.onload = init;
+                        script.async = true;
+                        script.src = 'https://developers.rambler.ru/likes/v1/widget.js';
+                        document.head.appendChild(script);
+                    })();
+                // ----   Rambler.Likes script end  ----
