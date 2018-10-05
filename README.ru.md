@@ -14,7 +14,7 @@
 </ol>
 <h2>Использование</h2>
 <p>1. Клонирование проекта:</p>
-<pre>git clone https://github.com/mikorn/gulp-project-wp.git --depth 1 themes</pre>
+<pre>git clone https://github.com/mikorn/wp-corp-start.git --depth 1 themes</pre>
 <p>Далее необходимо перейти в папку проекта:</p>
 <pre>cd themes</pre>
 <p>2. Установка npm-зависимостей:</p>

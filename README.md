@@ -15,7 +15,7 @@
 </ol>
 <h2>Use the template</h2>
 <p>1. Cloning of the project:</p>
-<pre>git clone https://github.com/mikorn/gulp-project-wp.git --depth 1 themes</pre>
+<pre>git clone https://github.com/mikorn/wp-corp-start.git --depth 1 themes</pre>
 <p>Farther go to the folder:</p>
 <pre>cd themes</pre>
 <p>2. Installing of npm-dependencies:</p>
