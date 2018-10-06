@@ -1,0 +1,12 @@
+.approach-item::before {
+  content: '';
+  background-color: themeColor;
+  font-size: 18px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}

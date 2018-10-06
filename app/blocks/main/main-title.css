@@ -1,0 +1,7 @@
+.main-title {
+  text-shadow: 2px 2px 2px darkColor;
+  z-index: 3;
+min_screen(md)
+min_screen(lg)
+min_screen(xl)
+}

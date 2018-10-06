@@ -1,25 +1,28 @@
 header.site-header
     .container.position-relative
-        #header-btn.header-btn.header-top.shadow
-            | Меню
         .header-phone.header-top.shadow
             | +7 (123) 456-78-90
+        #header-search.header-search.header-top.shadow
+            i.fas.fa-search
+        #header-btn.header-btn.header-top.shadow
+            | Меню
+        include search
         nav#header-menu.header-menu
             ul.h-100.w-100.d-flex.flex-column.justify-content-center.align-items-center
-                li.text-center.my-3
-                    a.lead.text-light.text-uppercase(href='http://localhost:3000')
+                li
+                    a(href='http://localhost:3000')
                         | Главная
-                li.text-center.my-3
-                    a.lead.text-light.text-uppercase(href='about.html')
+                li
+                    a(href='about.html')
                         | О компании
-                li.text-center.my-3
-                    a.lead.text-light.text-uppercase(href='objects.html')
+                li
+                    a(href='objects.html')
                         | Наши объекты
-                li.text-center.my-3
-                    a.lead.text-light.text-uppercase(href='news.html')
+                li
+                    a(href='news.html')
                         | Новости
-                li.text-center.my-3
-                    a.lead.text-light.text-uppercase(href='contacts.html')
+                li
+                    a(href='contacts.html')
                         | Контакты
 
 

@@ -1,1 +1,28 @@
-
+img
+  &.aligncenter
+    border-radius 10px
+    display block
+    height auto
+    margin 10px auto
+    max-width 900px
+    width 100%
+  &.alignleft
+    border-radius 10px
+    display block
+    height auto
+    margin 10px auto
+    width 100%
+    +min_screen(sm)
+      float left
+      margin 10px 10px 10px 0
+      width auto
+  &.alignright
+    border-radius 10px
+    display block
+    height auto
+    margin 10px auto
+    width 100%
+    +min_screen(sm)
+      float right
+      margin 10px 0 10px 10px
+      width auto

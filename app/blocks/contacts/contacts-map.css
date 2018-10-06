@@ -1,0 +1,5 @@
+.contacts-map {
+  border: 10px solid themeColor;
+  height: 350px;
+  overflow: hidden;
+}
