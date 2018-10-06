@@ -94,17 +94,6 @@ var paths = {
                     './app/bower_components/wow/LICENSE-MIT'
                 ],
                 dest: './app/libs/wow'
-            },
-            parallaxJS: {
-                src: [
-                    './app/bower_components/parallax.js/parallax.min.js',
-                    './app/bower_components/parallax.js/LICENSE'
-                ],
-                dest: './app/libs/parallax.js'
-            },
-            pageScroll2ID: {
-                src: './app/bower_components/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
-                dest: './app/libs/page-scroll-to-id'
             }
         }
     },
@@ -199,16 +188,6 @@ gulp.task('wow', function () {
         .pipe(gulp.dest(paths.app.libs.wow.dest));
 });
 
-gulp.task('parallaxJS', function () {
-    return gulp.src(paths.app.libs.parallaxJS.src)
-        .pipe(gulp.dest(paths.app.libs.parallaxJS.dest));
-});
-
-gulp.task('pageScroll2ID', function () {
-    return gulp.src(paths.app.libs.pageScroll2ID.src)
-        .pipe(gulp.dest(paths.app.libs.pageScroll2ID.dest));
-});
-
 gulp.task('cleanApp', function () {
     return del(paths.clean.app);
 });
@@ -237,7 +216,7 @@ gulp.task('dist', function () {
 
 gulp.task('build', gulp.parallel('cleanApp', 'html', 'css', 'js'));
 
-gulp.task('libs', gulp.parallel('jquery', 'bootstrap', 'fontAwesome', 'animateCSS', 'wow', 'parallaxJS', 'pageScroll2ID'));
+gulp.task('libs', gulp.parallel('jquery', 'bootstrap', 'fontAwesome', 'animateCSS', 'wow'));
 
 gulp.task('public', gulp.series('cleanDist', 'img', 'dist'));
 
