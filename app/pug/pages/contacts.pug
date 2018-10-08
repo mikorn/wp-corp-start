@@ -38,17 +38,25 @@ block site-content
                             .card-body
                                 form
                                     .form-group
-                                        input.form-control(type='text', placeholder='Ваше имя', required)
+                                        label.font-italic(for='formInputName')
+                                            | Ваше имя:
+                                        input#formInputName.form-control.border.border-secondary(type='text', required='')
                                     .form-group
-                                        input.form-control(type='email', placeholder='Email', required)
+                                        label.font-italic(for='formInputEmail')
+                                            | Email:
+                                        input#formInputEmail.form-control.border.border-secondary(type='email', required='')
                                     .form-group
-                                        input.form-control(type='phone', placeholder='Телефон', required)
+                                        label.font-italic(for='formInputPhone')
+                                            | Телефон:
+                                        input#formInputPhone.form-control.border.border-secondary(type='phone', required='')
                                     .form-group
-                                        input.form-control(type='text', placeholder='Должность')
+                                        label.font-italic(for='formInputPost')
+                                            | Должность:
+                                        input#formInputPost.form-control.border.border-secondary(type='text')
                                     .form-group
-                                        select.form-control
-                                            option.selected
-                                                | Организация
+                                        label.font-italic(for='formInputOrg')
+                                            | Организация:
+                                        select#formInputOrg.form-control
                                             option
                                                 | Государственное учреждение
                                             option
@@ -58,9 +66,13 @@ block site-content
                                             option
                                                 | Другое
                                     .form-group
-                                        input.form-control(type='text', placeholder='Сайт', required)
+                                        label.font-italic(for='formInputSite')
+                                            | Сайт организации:
+                                        input#formInputOrg.form-control.border.border-secondary(type='text')
                                     .form-group
-                                        textarea.form-control(rows='5', placeholder='Дополнительная информация')
+                                        label.font-italic(for='formInputComments')
+                                            | Дополнительная информация:
+                                        textarea#formInputComments.form-control.border.border-secondary(rows='5')
                                     .form-group.text-center
                                         button.btn.btn-theme(type='submit')
                                             | Отправить

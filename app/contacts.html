@@ -65,20 +65,24 @@
                     <div class="card-body">
                       <form>
                         <div class="form-group">
-                          <input class="form-control" type="text" placeholder="Ваше имя" required>
+                          <label class="font-italic" for="formInputName">Ваше имя:</label>
+                          <input class="form-control border border-secondary" id="formInputName" type="text" required="">
                         </div>
                         <div class="form-group">
-                          <input class="form-control" type="email" placeholder="Email" required>
+                          <label class="font-italic" for="formInputEmail">Email:</label>
+                          <input class="form-control border border-secondary" id="formInputEmail" type="email" required="">
                         </div>
                         <div class="form-group">
-                          <input class="form-control" type="phone" placeholder="Телефон" required>
+                          <label class="font-italic" for="formInputPhone">Телефон:</label>
+                          <input class="form-control border border-secondary" id="formInputPhone" type="phone" required="">
                         </div>
                         <div class="form-group">
-                          <input class="form-control" type="text" placeholder="Должность">
+                          <label class="font-italic" for="formInputPost">Должность:</label>
+                          <input class="form-control border border-secondary" id="formInputPost" type="text">
                         </div>
                         <div class="form-group">
-                          <select class="form-control">
-                            <option class="selected">Организация</option>
+                          <label class="font-italic" for="formInputOrg">Организация:</label>
+                          <select class="form-control" id="formInputOrg">
                             <option>Государственное учреждение</option>
                             <option>НКО</option>
                             <option>Компания</option>
@@ -86,10 +90,12 @@
                           </select>
                         </div>
                         <div class="form-group">
-                          <input class="form-control" type="text" placeholder="Сайт" required>
+                          <label class="font-italic" for="formInputSite">Сайт организации:</label>
+                          <input class="form-control border border-secondary" id="formInputOrg" type="text">
                         </div>
                         <div class="form-group">
-                          <textarea class="form-control" rows="5" placeholder="Дополнительная информация"></textarea>
+                          <label class="font-italic" for="formInputComments">Дополнительная информация:</label>
+                          <textarea class="form-control border border-secondary" id="formInputComments" rows="5"></textarea>
                         </div>
                         <div class="form-group text-center">
                           <button class="btn btn-theme" type="submit">Отправить</button>
